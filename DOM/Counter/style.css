@@ -1,0 +1,26 @@
+.counter{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.dec{
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(209, 59, 59);
+    border:1px solid black;
+    border-radius: 50px;
+    
+}
+.inc{
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(5, 225, 5);
+    border:1px solid black;
+    border-radius: 50px;
+}
+.value{
+    border: 2px solid black;
+    padding: 40px;
+    font-size: 50px;
+    border-radius: 30px;
+}
