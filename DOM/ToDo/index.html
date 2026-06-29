@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">TODO APP</h1>
+    <div class="input_field">
+        <div class="title_div">
+            <h3>Title: </h3>
+            <input type="text"  placeholder=" Enter the title of Task" id="title">
+        </div>
+        <div class="dis_div">
+            <h3>Discription: </h3>
+            <input type="text" id="discription" placeholder="Enter the discription of Task">
+        </div>
+        <button type="button" onclick="submit()" class="submit_button">Add Task</button>
+    </div>
+    <p class="error"></p>
+    <div id="container">  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
