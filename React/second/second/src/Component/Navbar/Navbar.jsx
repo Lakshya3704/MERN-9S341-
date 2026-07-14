@@ -13,6 +13,7 @@ const Navbar = () => {
       <a href='About'>About</a>
       <a href='Login'>Login</a>
       <a href='Signin'>Signin</a>
+      <button type='submit'>Theme</button>
     </nav>
     </>
   )
