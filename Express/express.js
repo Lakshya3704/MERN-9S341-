@@ -1,12 +1,16 @@
 const express = require('express');
+const logger = require('./Middleware/logger');
+const morgan = require('morgan');
 const app = express();
 
+app.use(morgan());
+app.use(express.json());
 app.get('/',(req,res)=>{
     res.send("Response send from server");
 });
 
 
-app.get('/login',(req,res)=>{
+app.get('/login',logger,(req,res)=>{
     // res.status(201);
     res.send("Response from login page");
 });
@@ -29,7 +33,7 @@ const students = [
         id:3,name: "Jerry", age: 24,course :"Java"
     },
     {
-        id :4, name: "Tom",age: 25,course : "CPP"
+        id :5, name: "Tom",age: 25,course : "CPP"
     }
 ]
 app.get('/student/:id',(req,res)=>{
@@ -100,6 +104,13 @@ app.put('/student/:id', (req, res) => {
         message: "Student data not upadted"
     });
     return;
+})
+
+app.post('/student',(req,res)=>{
+    const data = req.body;
+    const newStudent = {id: students.length, ...data};
+    students.push(newStudent);
+    res.json(newStudent);
 })
 app.listen(3000,()=>{
     console.log("Server runnning on 3000 port");
