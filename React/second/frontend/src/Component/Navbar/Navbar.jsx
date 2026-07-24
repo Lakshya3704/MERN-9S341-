@@ -1,21 +1,30 @@
-import React from 'react'
-import Home from '../../pages/Home/Home.jsx'
-import About from '../../pages/About/About.jsx'
-import Login from '../../pages/login/Login.jsx'
-import Signin from '../../pages/signin/Signin.jsx'
+import React, { useContext } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import { ThemeContext } from '../../Context/ThemeContext'
 import './Navbar.css'
+
 const Navbar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext)
+  const location = useLocation()
+
   return (
-    <>
-    <nav className='navbar'>
-      <a href='/' >MyDashboard</a>
-      <a href='home'>Home</a>
-      <a href='About'>About</a>
-      <a href='Login'>Login</a>
-      <a href='Signin'>Signin</a>
-      <button type='submit'>Theme</button>
+    <nav className={`navbar ${theme}`}>
+      <div className="nav-brand">
+        <Link to="/">🎓 CourseCraft</Link>
+      </div>
+
+      <div className="nav-links">
+        <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Dashboard</Link>
+        <Link to="/home" className={location.pathname === '/home' ? 'active' : ''}>Home</Link>
+        <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>About</Link>
+        <Link to="/login" className={location.pathname === '/login' ? 'active' : ''}>Login</Link>
+        <Link to="/signin" className={location.pathname === '/signin' ? 'active' : ''}>Sign Up</Link>
+      </div>
+
+      <button type="button" className="theme-toggle-btn" onClick={toggleTheme}>
+        {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
+      </button>
     </nav>
-    </>
   )
 }
 

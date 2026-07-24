@@ -3,9 +3,16 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <p>CopyRight @ 2027 | Lakshya Agarwal</p>
-    </div>
+    <footer className="footer">
+      <div className="footer-content">
+        <p>&copy; 2026 CourseCraft | Designed by Lakshya Agarwal</p>
+        <div className="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </footer>
   )
 }
 

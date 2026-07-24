@@ -1,19 +1,40 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Signin.css'
+
 const Signin = () => {
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    alert('Account created successfully!')
+    navigate('/login')
+  }
+
   return (
-    <>
-        <form action='/login' className='signin'>
-        <div className='sign'>
-          <h1 className='heading'>Welcome To MyDashBorad</h1>
-        <input type='text' placeholder='Enter your Name' required></input>
-        <input type='email' placeholder='Enter your Email' required></input>
-        <input type='password'placeholder='Enter your password' required></input>
-        <button type='submit' value='Submit'>Submit</button>
+    <div className="signin-container">
+      <form onSubmit={handleSubmit} className="signin-card">
+        <h1>Create an Account</h1>
+        <p className="signin-subtitle">Join CourseCraft and start learning today</p>
+        
+        <div className="input-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name" required />
         </div>
-        </form>
-          
-    </>
+
+        <div className="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required />
+        </div>
+
+        <div className="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="Create a password" required />
+        </div>
+
+        <button type="submit" className="submit-btn">Sign Up</button>
+      </form>
+    </div>
   )
 }
 
