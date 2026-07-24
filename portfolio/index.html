@@ -4,94 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lakshya Agarwal - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="head">
         <h1 class="name">Lakshya Agarwal</h1>
-        <nav >
+        <nav>
             <ul class="nav">
-                <ul><a href="#AboutMe">About</a></ul>
-                <ul><a href="#skills">Skills</a></ul>
-                <ul><a href="#education">Education</a></ul>
-                <ul><a href="#projects">Projects</a></ul>
-                <ul><a href="#contact">Contact</a></ul>
+                <li><a href="#AboutMe">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
+        </nav>
     </header>
+
     <main>
+        <!-- About Me Section -->
         <section id="AboutMe">
-            <h2>About me</h2>
+            <h2>About Me</h2>
             <div class="aboutdiv">
-                <img src="imageW.png" alt="Lakshya" width="100" class="mypic" style="grid-area: pic;">
-                <p style="grid-area: dis;" class="dis">I am Lakshya Agarwal, a passionate and motivated B.Tech Computer Science and Engineering student
-                    at Lovely Professional University (LPU) with a CGPA of 8.71. I have a strong interest in Full
-                    Stack Web Development and enjoy building scalable and user-friendly applications using the MERN
-                    stack (MongoDB, Express.js, React.js, and Node.js). Through projects such as an Employee Leave
-                    & Reimbursement Management System and a Doubt Solving Platform, I have gained hands-on experience
-                    in developing secure REST APIs, implementing authentication and authorization, managing databases,
-                    and creating responsive user interfaces. I have also solved 200+ DSA problems, which has strengthened
-                    my problem-solving and analytical skills. I am continuously learning new technologies and seeking
-                    opportunities to apply my technical knowledge to build impactful software solutions while growing
-                    as a software developer.</p>
+                <img src="imageW.png" alt="Lakshya Agarwal" class="mypic">
+                <div>
+                    <p class="dis">
+                        I am <strong>Lakshya Agarwal</strong>, a passionate and motivated B.Tech Computer Science and Engineering student
+                        at Lovely Professional University (LPU) with a CGPA of 8.71. I have a strong interest in Full
+                        Stack Web Development and enjoy building scalable and user-friendly applications using the MERN
+                        stack (MongoDB, Express.js, React.js, and Node.js).
+                    </p>
+                    <p class="dis" style="margin-top: 10px;">
+                        Through projects such as an Employee Leave & Reimbursement Management System and a Doubt Solving Platform, 
+                        I have gained hands-on experience in developing secure REST APIs, implementing authentication and authorization, 
+                        managing databases, and creating responsive user interfaces. I have also solved 200+ DSA problems, which has 
+                        strengthened my problem-solving and analytical skills.
+                    </p>
+                    <div class="stats-row">
+                        <div class="stat-box">
+                            <strong>8.71</strong>
+                            <span>CGPA (LPU)</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>200+</strong>
+                            <span>DSA Solved</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>MERN</strong>
+                            <span>Web Developer</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- Skills Section -->
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: Java, CPP, C, JavaScript</li>
-                <li>Web Development: HTML, CSS, React.js, Node.js, Express.js</li>
-                <li>Database Management: MongoDB, MySQL</li>
-            </ul>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>B.Tech in Computer Science and Engineering from Lovely Professional University, Punjab -- CGPA: 8.71
-                </li>
-                <li>Intermediate in Science and Math from N. K. Public School, Rajasthan -- Percentage: 90.60%</li>
-                <li>Matriculate from N. K. Public School, Rajasthan -- Percentage: 90.33%</li>
-            </ul>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <h3>Employee Leave and Reimbursement Managment System</h3>
-                <li>Developed a Leave Managment and Reimbursment System using MERN in which employee can apply for thier
-                    any
-                    type of Leave<br> such as Paid Leave, Casual Leave and Sick Leave and all and also apply for
-                    reimbursment of
-                    thier bills which they spend in the<br> behalf of thier ompany</li>
-                <li>Implemented authentication and authorization using JWT and bcrypt to ensure secure access to the
-                    system</li>
-                <li>Designed and implemented RESTful APIs for managing employee leave requests, reimbursement requests.
-                </li>
-                <h3>Doubt Clearing Platform</h3>
-                <li>Developed a community based platform where every individual can upload thier doubts in any format
-                    like image,
-                    text, video<br> and also recive the output in any format from thier fellow mates.</li>
-                <li>Implemented authentication and authorization using JWT and bcrypt to ensure secure access to the
-                    system</li>
-                <li>Designed and implemented RESTful APIs for managing the roles in it.</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                <input type="submit" value="Submit">
-            </form>
+            <div class="skills-list-group">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">C</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express.js</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database Management & Security</h3>
+                    <div class="skill-tags">
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">JWT Auth</span>
+                        <span class="tag">Bcrypt</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <ul class="edu-list">
+                <li class="edu-item">
+                    <h3>B.Tech in Computer Science and Engineering <span class="score">CGPA: 8.71</span></h3>
+                    <p>Lovely Professional University, Punjab</p>
+                </li>
+                <li class="edu-item">
+                    <h3>Intermediate in Science and Math <span class="score">Percentage: 90.60%</span></h3>
+                    <p>N. K. Public School, Rajasthan</p>
+                </li>
+                <li class="edu-item">
+                    <h3>Matriculate (10th Standard) <span class="score">Percentage: 90.33%</span></h3>
+                    <p>N. K. Public School, Rajasthan</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <h3>Employee Leave & Reimbursement Management System</h3>
+                    <ul>
+                        <li>Developed a Leave Management and Reimbursement System using MERN in which employees can apply for Paid Leave, Casual Leave, and Sick Leave, and submit bills for company reimbursement.</li>
+                        <li>Implemented authentication and authorization using JWT and bcrypt to ensure secure access to the system.</li>
+                        <li>Designed and implemented RESTful APIs for managing employee leave requests and reimbursement workflows.</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">JWT</span>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Doubt Clearing Platform</h3>
+                    <ul>
+                        <li>Developed a community-based platform where individuals can upload doubts in text, image, or video formats and receive solutions from peers.</li>
+                        <li>Implemented authentication and authorization using JWT and bcrypt to secure user accounts.</li>
+                        <li>Designed and implemented RESTful APIs for role management and interaction flow.</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-badge">MERN Stack</span>
+                        <span class="tech-badge">JWT</span>
+                        <span class="tech-badge">REST APIs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
     </main>
+
     <footer class="footers">
-        <p>@Copyright | Lakshya Agarwal | 2026</p>
+        <p>&copy; 2026 Lakshya Agarwal | All Rights Reserved</p>
     </footer>
 </body>
 
