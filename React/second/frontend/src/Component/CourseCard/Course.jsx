@@ -8,7 +8,6 @@ const Course = ({ image, title, instructor, price, duration, level }) => {
     <div className="card">
       <div className="card-image-wrapper">
         <img src={image} alt={title} className="courseImg" />
-        <span className={`level-tag ${levelClass}`}>{level}</span>
       </div>
 
       <div className="card-content">
@@ -17,6 +16,7 @@ const Course = ({ image, title, instructor, price, duration, level }) => {
 
         <div className="card-info">
           <span className="duration">⏱️ {duration}</span>
+          <span className={`level-tag ${levelClass}`}>{level}</span>
         </div>
 
         <div className="price-row">
