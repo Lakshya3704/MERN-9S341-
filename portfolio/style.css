@@ -1,4 +1,4 @@
-/* Simple, Clean Portfolio Styling using original color palette */
+
 
 * {
     margin: 0;
@@ -175,7 +175,7 @@ h2 {
     font-weight: 500;
 }
 
-/* Education & Timeline */
+
 .edu-list {
     list-style: none;
     display: flex;
@@ -212,7 +212,6 @@ h2 {
     margin-left: 10px;
 }
 
-/* Projects Section */
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -257,7 +256,6 @@ h2 {
     border-radius: 4px;
 }
 
-/* Contact Form */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -308,7 +306,6 @@ h2 {
     background-color: rgb(194, 42, 42);
 }
 
-/* Footer */
 .footers {
     text-align: center;
     padding: 20px;
@@ -319,25 +316,4 @@ h2 {
     margin: 20px auto 0 auto;
     color: #555;
     font-weight: 500;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .head {
-        flex-direction: column;
-        text-align: center;
-        border-radius: 20px;
-    }
-    .nav {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .aboutdiv {
-        flex-direction: column;
-        text-align: center;
-    }
-    .footers {
-        border-radius: 20px;
-    }
 }
