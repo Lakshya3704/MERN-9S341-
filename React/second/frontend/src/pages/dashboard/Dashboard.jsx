@@ -19,26 +19,6 @@ const Dashboard = () => {
       <div className="dash-header">
         <h1 className="heading">Explore Premium Courses</h1>
         <p className="subheading">Upgrade your full-stack development and computer science skills</p>
-        
-        <div className="filter-bar">
-          <input 
-            type="text" 
-            placeholder="🔍 Search courses or instructors..." 
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="search-input"
-          />
-          <select 
-            value={selectedLevel} 
-            onChange={(e) => setSelectedLevel(e.target.value)}
-            className="level-select"
-          >
-            <option value="All">All Levels</option>
-            <option value="Beginner">Beginner</option>
-            <option value="Intermediate">Intermediate</option>
-            <option value="Advanced">Advanced</option>
-          </select>
-        </div>
       </div>
 
       <div className="card-grid">

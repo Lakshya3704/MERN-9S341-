@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${theme}`}>
       <div className="nav-brand">
-        <Link to="/">🎓 CourseCraft</Link>
+        <Link to="/">CourseCraft</Link>
       </div>
 
       <div className="nav-links">
